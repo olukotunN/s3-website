@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Emmanuel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add any CSS stylesheets for animations (e.g., Animate.css, or your custom CSS) -->
+    <style>
+        /* Example CSS styles for the image and animations */
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #0074D9; /* Blue border around the image */
+            border-radius: 50%; /* Rounded border for a circular image */
+            box-shadow: 5px 5px 10px #888888; /* Add a shadow to the image */
+        }
+
+        /* Example animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fadeIn {
+            animation: fadeIn 1s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Emmanuel's Portfolio</h1>
+    </header>
+
+    <!-- Add your profile image from S3 -->
+    <img class="profile-image fadeIn" src="https://buckolukotun101.s3.amazonaws.com/profile.png" alt="Emmanuel's Profile Image">
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </li>
+            <!-- Add more project items as needed -->
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Emmanuel's work is outstanding. He delivered the project on time and exceeded our expectations." - Client 1</p>
+        </div>
+        <div class="review">
+            <p>"I highly recommend Emmanuel. His attention to detail and creativity are exceptional." - Client 2</p>
+        </div>
+        <!-- Add more reviews as needed -->
+    </section>
+
+    <section id="animations">
+        <h2>Animations</h2>
+        <p>Here, you can showcase animations, interactive elements, or any other dynamic content you'd like to feature.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Emmanuel's Portfolio</p>
+    </footer>
+</body>
+</html>
